@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Santicue14 | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="./images//logo.svg" alt="Logo of snap">
+    <img src="./images//icon-menu.svg" alt="Menu Icon" class="toggleMenu" id="toggleMenu">
+    <nav id="navbar">
+      <div class="back"> </div>
+      <div class="front">
+        <div class="close-img-container">
+          <img id="close-btn" src="./images/icon-close-menu.svg" alt="Close NavBar">
+        </div>
+        <ul>
+          <li class="ul-container">
+            <button class="submenu-btn" id="features-btn">
+              Features
+              <img src="./images//icon-arrow-down.svg" id="featuresButton" alt="Arrow Down">
+            </button>
+            <ul class="features-ul">
+              <li>
+                <img src="./images/icon-todo.svg" alt="Todo Icon">
+                <span>Todo List</span>
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" alt="Calendar Icon">
+                <span>Calendar</span>
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="Reminders Icon">
+                <span>Reminders</span>
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" alt="Planning Icon">
+                <span>Planning</span>
+              </li>
+            </ul>
+          </li>
+          <li class="ul-container">
+            <button class="submenu-btn" id="company-btn">
+              Company
+              <img src="./images//icon-arrow-down.svg" id="companyButton" alt="Arrow Down">
+            </button>
+            <ul class="company-ul">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+          <div class="btn-container">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+          </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Make remote work</h2>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,create team rituals, and watch productivity
+        soar.
+      </p>
+      <button>Learn more</button>
+      <div class="logos-container">
+        <img src="./images/client-databiz.svg" alt="DataBiz Client" class="databiz">
+        <img src="./images/client-audiophile.svg" alt="AudioPhile Client" class="audiophile">
+        <img src="./images/client-meet.svg" alt="Meet Client" class="meet">
+        <img src="./images/client-maker.svg" alt="Maker Client" class="maker">
+      </div>
+    </section>
+
+    <picture>
+      <source srcset="./images/image-hero-mobile.png" media="(max-width: 1023px)">
+      <source srcset="./images/image-hero-desktop.png" media="(min-width: 1024px)">
+      <img src="./images/image-hero-mobile.png"  class="hero-image" alt="Image Hero">
+    </picture>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
